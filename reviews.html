@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-RU-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>КЛА</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="icon" href="./img/fav.png" type="image/png">
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+          <div class="nav-row">
+              <div class="logo">
+                  <a href="index.html"><img class="logo" src="./img/index_logo.png" alt="Логотип сайта"></a>
+              </div>
+              
+              <button type="button" class="header__menu-switcher menu-switcher" >
+                  <img src="./img/flatline.svg" alt class="menu-switcher__line">
+                  <img src="./img/flatline.svg" alt class="menu-switcher__line">
+                  <img src="./img/flatline.svg" alt class="menu-switcher__line">
+              </button>
+              <ul class="nav-list header__navigation" >
+                  <li class="nav-list__item"><a href="./index.html" class="nav-list__link">Главная</a></li>
+                  <li class="nav-list__item"><a href="./chrono.html" class="nav-list__link">История</a></li>
+                  <li class="nav-list__item"><a href="./reviews.html" class="nav-list__link nav-list__link--active">Связь</a></li>
+
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+    <main class="section">
+      <div class="container">
+        <h1 class="title-1">Связь</h1>
+        <p class="reviews-description">
+         Связаться с автором данного сайта можно через форму ниже.
+        </p>
+        <form action="POST" class="contacts__feedback-form feedback-form">
+          <h2 class="title-2">Связаться</h2>
+          <div class="reviews-form feedback-form__inputs">
+            <div class="feedback-form__personal-information">
+              <input
+                name="Name"
+                placeholder="Ваше имя"
+                type="text"
+                class="feedback-form__input"
+              />
+              <input
+                name="email"
+                placeholder="Ваша почта"
+                type="text"
+                class="feedback-form__input"
+              />
+            </div>
+            <textarea
+              name="Message"
+              placeholder="Сообщение"
+              class="feedback-form__user-message"
+            ></textarea>
+          </div>
+          <button type="submit" class="feedback-form__submit-button link">
+            Связаться
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+          <div class="footer__wrapper">
+              <ul class="social">
+                  <li class="social__item"><a href="https://github.com/Justausernameitisregular"><img src="./img/icons/gitHub.svg" alt="Link"></a></li>
+              </ul>
+              <div class="copyright">
+                  <p>© Н. Д. Шубин, 2023</p>
+              </div>
+          </div>
+      </div>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/swiper.js"></script>
+  </body>
+</html>
