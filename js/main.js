@@ -21,7 +21,7 @@ class Accordion {
     // Хранение элемента <summary>
     this.summary = el.querySelector("summary");
     // Хранение элемента <div class="content">
-    this.content = el.querySelector(".skill__text");
+    this.content = el.querySelector(".chrono__text");
 
     // Хранение объекта анимации (чтобы при необходимости отменить его)
     this.animation = null;
