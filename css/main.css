@@ -1,19 +1,11 @@
 @import "./reset.css";
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 * {
     transition: all 0.2s ease !important;
 
 }
 
-/*
-font-family: 'DM Sans', sans-serif;
-font-family: 'Poppins', sans-serif;
-*/
-/*
-* {
-    border: 1px solid red;
-}*/
+
 iframe {
   margin-top: 60px;
 }
@@ -21,33 +13,33 @@ iframe {
 :root {
 
 /* Устанавливаем пользовательские CSS переменные */
-  --blackpure: #000;                /* Чисто черный цвет */
-  --black: #0d101f;                 /* Цвет "черного" */
-  --black-border: #26292D;          /* Цвет грани "черного" */
-  --white: #d1d8df;                    /* Белый цвет */
-  --grey: #5c626e;                  /* Серый цвет */
-  --purple: #6D39DE;                /* Фиолетовый цвет */
-  --yellow: #FFD86A;                /* Жёлтый цвет */
+  --blackpure: #000;              
+  --black: #0d101f;                 
+  --black-border: #26292D;         
+  --white: #d1d8df;                    
+  --grey: #5c626e;                 
+  --purple: #6D39DE;               
+  --yellow: #FFD86A;                
   --orange: #bd7619;
-  --red: #EB4C42;                   /* Красный цвет */
-  --green: #c7d496;                  /* Зелёный цвет */
+  --red: #EB4C42;                 
+  --green: #c7d496;                 
   --dgrey: #2a2c35;
 
-  --text-color: var(--black);         /* Устанавливаем цвет текста черным */
+  --text-color: var(--black);        
 
-  --dark-bg: var(--dgrey);            /* Фон в темном режиме - черный */
-  --dark-border: var(--black-border); /* Цвет рамки в темном режиме */
-  --header-text: var(--white);        /* Цвет текста заголовка белый */
-  --accent: var(--orange);            /* Цвет акцента фиолетовый */
+  --dark-bg: var(--dgrey);            
+  --dark-border: var(--black-border); 
+  --header-text: var(--white);       
+  --accent: var(--orange);            
 
-  --page-bg: var(--black);            /* Фон страницы белый */
-  --text-color: var(--white);         /* Цвет текста черный */
-  --header-bg: var(--grey);           /* Фон заголовка серый */
-  --title-1: var(--accent);           /* Цвет заголовка 1 */
-  --header-title: var(--dgrey);       /* Цвет заголовка */
-  --project-card-bg: var(--grey);    /* Фон карточек проектов белый */
-  --project-card-text: var(--white);  /* Цвет текста на карточках проектов черный */
-  --box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25); /* Тень блока */
+  --page-bg: var(--black);           
+  --text-color: var(--white);       
+  --header-bg: var(--grey);           
+  --title-1: var(--accent);           
+  --header-title: var(--dgrey);      
+  --type-card-bg: var(--grey);    
+  --type-card-text: var(--white); 
+  --box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25); 
 }
 
 
@@ -77,7 +69,7 @@ main, header, footer {
     max-width: 1200px;
 }
 
-.container-skills{
+.container-chronos{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -135,17 +127,8 @@ main, header, footer {
 
 .logo {
     margin-right: auto;
-    color: var(--header-text);
-    height: 40em;
-    font-size: 2px;
-    font-family: Noto Sans;
+    height: 5em;
 }
-
-.logo strong {
-    font-weight: 700;
-}
-
-
 
 .nav-list {
   z-index: 9999;
@@ -289,6 +272,9 @@ main, header, footer {
   .menu-switcher {
     display: flex;
   }
+  .logo {
+    max-height: 3em;
+  }
 }
 
 /* Btn */
@@ -335,19 +321,6 @@ main, header, footer {
     transition: opacity 0.2s ease-in;
 }
 
-.YandexColor {
-  background-color: var(--yellow);
-}
-
-.KongregateColor{
-  color: var(--white);
-  background-color: var(--red);
-}
-
-.MineCraftColor{
-  background-color: var(--green);
-}
-
 .btn-outline:hover {
     opacity: 0.8;
 }
@@ -357,50 +330,9 @@ main, header, footer {
     top: 1px;
 }
 
-/*stat*/
+/* types  */
 
-.stat {
-  color: #000;
-  padding: 30px 0;
-  margin-top: 50px;
-  background-color: rgba(0, 0, 0, 0.13);
-  backdrop-filter: blur(10px);
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 40px rgba(8,7,16,0.6);
-}
-
-
-.stat-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.stat-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  max-width: 150px;
-}
-
-.stat-title {
-  font-weight: 700;
-  font-size: 32px;
-  color: var(--purple);
-}
-
-.stat-descr {
-  color: var(--white);
-  font-size: 20px;
-  text-align: center;
-}
-
-/* Projects  */
-
-.projects {
+.types {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -408,44 +340,44 @@ main, header, footer {
     row-gap: 30px;
 }
 
-.project {
+.type {
     max-width: 370px;
     background-color: transparent;
 }
 
-.project p {
+.type p {
     padding: 10px 15px;
     line-height: 150%;
     text-align: justify;
     font-size: 18px;
 }
 
-.project__img {
+.type__img {
     border-radius: 10px;
 }
 
-.project__img:hover {
+.type__img:hover {
   transform: scale(0.95);
 }
 
-.project__title {
+.type__title {
     padding: 15px 20px 25px;
     font-weight: 700;
     font-size: 24px;
     line-height: 1.3;
-    color: var(--project-card-text);
+    color: var(--type-card-text);
 }
 
-/* Project details */
+/* type details */
 
-.project-details {
+.type-details {
     margin: 0 auto;
     max-width: 865px;
 
     
 }
 
-.project-details__cover {
+.type-details__cover {
     
     float: left;
     max-width: 250px;
@@ -453,7 +385,7 @@ main, header, footer {
     margin: 0.5em;
 }
 
-.project-details__desc {
+.type-details__desc {
     margin-bottom: 30px;
     float: left;
     font-weight: 700;
@@ -550,7 +482,7 @@ option {
   display: flex;
   flex-direction: column;
   width: 300px;
-  background-color: var(--project-card-bg);
+  background-color: var(--type-card-bg);
 }
 
 .reviews-description{
@@ -648,17 +580,17 @@ option {
     padding: 0.9375em;
     border-radius: 5px;
     border: 4px solid var(--title-1);
-    color: var(--project-card-text);
+    color: var(--type-card-text);
     font-weight: 500;
     line-height: normal;
   }
   .feedback-form__input::-moz-placeholder {
-    color: var(--project-card-text);
+    color: var(--type-card-text);
     font-weight: 500;
     line-height: normal;
   }
   .feedback-form__input::placeholder {
-    color: var(--project-card-text);
+    color: var(--type-card-text);
     font-weight: 500;
     line-height: normal;
   }
@@ -673,7 +605,7 @@ option {
     height: 12.375em;
     border-radius: 5px;
     border: 4px solid var(--title-1);
-    color: var(--project-card-text);
+    color: var(--type-card-text);
     font-weight: 500;
     line-height: normal;
   }
@@ -685,12 +617,12 @@ option {
     width: 100%
   }
   .feedback-form__user-message::-moz-placeholder {
-    color: var(--project-card-text);
+    color: var(--type-card-text);
     font-weight: 500;
     line-height: normal;
   }
   .feedback-form__user-message::placeholder {
-    color: var(--project-card-text);
+    color: var(--type-card-text);
     font-weight: 500;
     line-height: normal;
   }
@@ -728,7 +660,7 @@ option {
   @media (hover: hover) {
     .link:hover {
       background: var(--white);
-      color: var(--project-card-bg);
+      color: var(--type-card-bg);
     }
   }
   @media (max-width: 71.25em) {
@@ -795,15 +727,15 @@ option {
         font-size: 30px;
     }
 
-    /* Projects */
+    /* types */
 
-    .project__title {
+    .type__title {
         font-size: 22px;
     }
 
-    /* Project page */
+    /* type page */
 
-    .project-details__desc {
+    .type-details__desc {
         margin-bottom: 20px;
         font-size: 22px;
     }
@@ -841,14 +773,14 @@ option {
 }
 
 
-.skills {
+.chronos {
   max-width: 800px;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.skill {
+.chrono {
   width: 100%;
   background-color: var(--header-bg);
   padding: 20px 25px;
@@ -857,48 +789,48 @@ option {
   flex-direction: column;
 }
 
-.skill:nth-child(1)
+.chrono:nth-child(1)
 {
   background-color: var(--orange);
 }
-.skill:nth-child(2)
+.chrono:nth-child(2)
 {
   background-color: var(--green);
   color: var(--dgrey);
 }
-.skill:nth-child(3)
+.chrono:nth-child(3)
 {
   background-color: var(--orange);
 }
-.skill:nth-child(4)
+.chrono:nth-child(4)
 {
   background-color: var(--green);
   color: var(--dgrey);
 }
-.skill:nth-child(5)
+.chrono:nth-child(5)
 {
   background-color: var(--orange);
 }
-.skill:nth-child(6)
+.chrono:nth-child(6)
 {
   background-color: var(--green);
   color: var(--dgrey);
 }
-.skill:nth-child(7)
+.chrono:nth-child(7)
 {
   background-color: var(--orange);
 }
-.skill:nth-child(8)
+.chrono:nth-child(8)
 {
   background-color: var(--green);
   color: var(--dgrey);
 }
-.skill:nth-child(9)
+.chrono:nth-child(9)
 {
   background-color: var(--orange);
 }
 
-.skill__title {
+.chrono__title {
   font-size: 24px;
   font-weight: 600;
   user-select: none;
@@ -909,7 +841,7 @@ details summary::-webkit-details-marker {
 }
 
 details summary::after{
-  content: "+";
+  content: "ᐯ";
   position: absolute;
   right: 0;
   transition: all 0.2s ease-in-out;
@@ -921,7 +853,7 @@ details summary {
 }
 
 details[open] summary::after {
-  transform: rotate(45deg) scale(1.2);
+  transform: rotate(180deg) scale(1.2);
 }
 
 /* Убираем стандартный маркер Firefox */
@@ -929,7 +861,7 @@ details > summary {
   list-style: none;
 }
 
-.skill__text {
+.chrono__text {
   margin-top: 30px;
   font-size: 18px;
   text-align: justify;
