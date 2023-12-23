@@ -13,16 +13,13 @@ iframe {
 :root {
 
 /* Устанавливаем пользовательские CSS переменные */
-  --blackpure: #000;              
-  --black: #0d101f;                 
-  --black-border: #26292D;         
-  --white: #d1d8df;                    
-  --grey: #5c626e;                 
-  --purple: #6D39DE;               
-  --yellow: #FFD86A;                
+  --blackpure: #000;
+  --black: #0d101f;
+  --black-border: #26292D;
+  --white: #d1d8df;
+  --grey: #5c626e;
   --orange: #bd7619;
-  --red: #EB4C42;                 
-  --green: #c7d496;                 
+  --green: #c7d496;
   --dgrey: #2a2c35;
 
   --text-color: var(--black);        
@@ -467,13 +464,12 @@ main, header, footer {
 }
 }
 
-
+.iframe {
+  width: 560px;
+  height: 315px;
+}
 option {
     color: #000;
-}
-.swiper {
-  min-width: 0;
-  margin-top: 40px;
 }
 .review-card {
   gap: 15px;
@@ -539,6 +535,10 @@ option {
   @media (max-width: 71.25em) {
     .feedback-form__inputs {
       font-size: 1.4rem;
+    }
+    .iframe {
+      max-width: 280px;
+      max-height: 157.5px;
     }
   }
   .reviews-form {
@@ -866,4 +866,5 @@ details > summary {
   font-size: 18px;
   text-align: justify;
 }
+
 
